@@ -1,0 +1,4 @@
+model,acc,params,macs
+original,93.68,11173962,555422720
+pruned_no_finetune,40.75,5679306,281744384
+pruned_finetuned,93.65,5679306,281744384

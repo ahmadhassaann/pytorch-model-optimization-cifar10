@@ -1,0 +1,6 @@
+onnx_model,accuracy_pct,latency_ms_bs1_mean,latency_ms_bs1_p95,throughput_img_per_s,file_size_mb,test_samples,provider,threads
+resnet18_fp32.onnx,93.9,12.645,17.449,81.9,42.616,2000,CPUExecutionProvider,1
+resnet18_ptq_int8.onnx,92.85,9.433,11.363,139.4,10.766,2000,CPUExecutionProvider,1
+resnet18_qat_int8.onnx,93.95,20.484,24.7,56.6,42.787,2000,CPUExecutionProvider,1
+resnet18_structured.onnx,93.2,7.311,10.629,155.7,21.659,2000,CPUExecutionProvider,1
+resnet18_unstructured.onnx,94.25,12.751,17.982,80.8,42.616,2000,CPUExecutionProvider,1

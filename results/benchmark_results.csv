@@ -1,0 +1,6 @@
+model,checkpoint,precision,accuracy_pct,latency_ms_bs1_mean,latency_ms_bs1_p95,throughput_img_per_s,file_size_mb,params_total,params_nonzero,weight_sparsity_pct,macs,test_samples
+fp32,resnet18_fp32.pth,FP32,93.68,19.984,23.43,69.8,42.701,11173962.0,11173962.0,0.0,555422720.0,10000
+ptq,resnet18_ptq_int8.pth,INT8,93.69,9.56,11.658,103.6,10.784,,,,,10000
+qat,resnet18_qat_int8.pth,INT8,94.15,9.824,14.544,103.8,10.784,,,,,10000
+unstructured,resnet18_unstructured.pth,FP32,94.21,20.676,23.251,69.9,42.702,11173962.0,2242480.0,80.0,555422720.0,10000
+structured,resnet18_structured.pth,FP32,93.65,12.339,14.017,113.9,21.734,5679306.0,5679306.0,0.0,281744384.0,10000
